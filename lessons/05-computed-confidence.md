@@ -12,7 +12,7 @@ final = 0.40·answer_consistency
 → HIGH (≥0.8) / MEDIUM (≥0.5) / LOW (<0.5)
 ```
 
-Tiap komponen punya makna dan bisa dijelaskan — bukan angka ajaib.
+Tiap komponen punya makna dan bisa dijelaskan, bukan angka ajaib.
 
 ## Kenapa dihitung, bukan ditebak
 "LLM bilang high" tak terkalibrasi: model bisa pede tapi salah. Skor terhitung bisa
@@ -30,15 +30,15 @@ label = "HIGH" if final>=.8 else "MEDIUM" if final>=.5 else "LOW"
 ```
 
 ## Mendefinisikan komponen
-- **answer_consistency** — 1.0 dikurangi penalti per kontradiksi yang ditemukan.
-- **verification_agreement** — agreement Method A vs B (0–1); netral 0.5 bila tak ada cek.
-- **tool_execution_success** — rasio tool call sukses.
-- **data_coverage** — proporsi data relevan yang benar-benar tersentuh.
+- **answer_consistency**: 1.0 dikurangi penalti per kontradiksi yang ditemukan.
+- **verification_agreement**: agreement Method A vs B (0–1); netral 0.5 bila tak ada cek.
+- **tool_execution_success**: rasio tool call sukses.
+- **data_coverage**: proporsi data relevan yang benar-benar tersentuh.
 
 ## Jebakan
 - **Bobot asal.** Tulis alasan tiap bobot; konsistensi jawaban paling berat (0.40) karena
   paling sering jadi sumber error.
-- **Selalu 1.0.** Kalau skor tak pernah turun, sinyalnya kurang tajam — uji dengan kasus salah.
+- **Selalu 1.0.** Kalau skor tak pernah turun, sinyalnya kurang tajam, uji dengan kasus salah.
 
 ## Lanjut
 → [06 · Eval harness](06-eval-harness.md): ukur apakah confidence ini benar berkorelasi.

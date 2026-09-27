@@ -1,4 +1,4 @@
-"""Computed confidence (Lesson 05) — implementasi rumus tertimbang, tanpa dependency.
+"""Computed confidence (Lesson 05): implementasi rumus tertimbang, tanpa dependency.
 
 Jalankan:  python examples/confidence.py
 """
@@ -43,7 +43,7 @@ def demo() -> None:
 
     assert high.label == "HIGH"
     assert mixed.label in ("MEDIUM", "LOW")
-    print("OK — rumus konsisten.")
+    print("OK: rumus konsisten.")
 
 
 if __name__ == "__main__":

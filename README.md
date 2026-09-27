@@ -1,10 +1,10 @@
-# agentic-class — Building Verified Agentic Systems
+# agentic-class: Building Verified Agentic Systems
 
 Catatan belajar + mini-kurikulum yang aku susun sambil ngebangun
-[**ANALYST — Verified Analytics Agent**](https://github.com/ne-he/agentic_analyst):
+[**ANALYST: Verified Analytics Agent**](https://github.com/ne-he/agentic_analyst):
 agen data analyst yang nulis kodenya sendiri, jalanin di sandbox, dan **memverifikasi tiap angka**.
 
-Repo ini fokus ke *kenapa* dan *bagaimana* — bukan sekadar kode jadi, tapi keputusan
+Repo ini fokus ke *kenapa* dan *bagaimana*, bukan sekadar kode jadi, tapi keputusan
 engineering di baliknya. Ditulis biar bisa aku baca ulang 6 bulan lagi (dan dipahami orang lain).
 
 ## Kurikulum

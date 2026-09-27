@@ -11,7 +11,7 @@ while belum_selesai:
 ```
 
 Modelnya tetap LLM biasa. Yang bikin "agentic" adalah: ia boleh **memilih tindakan**,
-**melihat hasilnya**, lalu **memutuskan langkah berikut** — berulang, sampai cukup bukti.
+**melihat hasilnya**, lalu **memutuskan langkah berikut**, berulang sampai cukup bukti.
 
 ## Kenapa ini penting
 "Chat with CSV" = satu panggilan model → jawaban. Tidak ada eksekusi, tidak ada

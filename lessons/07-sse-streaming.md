@@ -29,7 +29,7 @@ def worker(): result = loop.run(q, ds, on_event=events.put); events.put(SENTINEL
 - **EventSource cuma GET.** `/analyze` itu POST → di klien pakai `fetch` + ReadableStream
   reader, parse frame manual.
 - **Proxy yang buffer.** Beberapa proxy menahan SSE; uji end-to-end, bukan cuma lokal.
-- **Simpan hasil setelah stream**, bukan sebelum — `final` event lalu `save_run`.
+- **Simpan hasil setelah stream**, bukan sebelum: `final` event lalu `save_run`.
 
 ## Lanjut
 → [08 · Persistence](08-persistence.md): simpan tiap run biar bisa dibuka lagi.

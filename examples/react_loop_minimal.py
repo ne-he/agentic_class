@@ -1,4 +1,4 @@
-"""ReAct loop minimal — tanpa LLM/Docker, biar konsepnya kelihatan telanjang.
+"""ReAct loop minimal: tanpa LLM/Docker, biar konsepnya kelihatan telanjang.
 
 `generate` di-inject (di sini fungsi palsu yang di-script). Ini pola yang sama dipakai
 di project asli supaya loop bisa diuji tanpa kuota API.
@@ -70,4 +70,4 @@ if __name__ == "__main__":
     result = react("Region mana profit tertinggi?", scripted_llm())
     print("JAWABAN:", result["final"])
     assert result.get("key_value") == 150, "harusnya West=150"
-    print("OK — loop selesai, angka cocok.")
+    print("OK: loop selesai, angka cocok.")

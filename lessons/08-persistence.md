@@ -2,7 +2,7 @@
 
 ## Konsep
 Tiap run disimpan: `run_history`, `scorecards`, `gold_questions`, `artifacts`. Pakai
-SQLite via SQLAlchemy 2.0 — gratis, tanpa akun, tapi **portable** ke Postgres (Neon) nanti
+SQLite via SQLAlchemy 2.0: gratis, tanpa akun, tapi **portable** ke Postgres (Neon) nanti
 cukup ganti connection string.
 
 ## Kenapa SQLite dulu
@@ -24,7 +24,7 @@ class RunHistory(Base):
 `DATABASE_URL=sqlite:///./backend/analyst.db` itu **relatif ke CWD**. Jalankan server dari
 folder berbeda → "unable to open database file". Solusi: normalisasi path SQLite relatif ke
 root project, dan pastikan folder induknya ada. Bug ini lolos dari unit test (pakai DB
-sementara absolut) — ketahuan baru saat smoke-test server sungguhan.
+sementara absolut), dan baru ketahuan baru saat smoke-test server sungguhan.
 
 ## Jebakan lain
 - **`datetime.utcnow` deprecated** → pakai timezone-aware `datetime.now(timezone.utc)`.

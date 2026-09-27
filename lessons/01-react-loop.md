@@ -1,7 +1,7 @@
 # 01 · ReAct loop
 
 ## Konsep
-ReAct = **Reason + Act**. Tiap giliran, model membalas **satu objek JSON** — salah satu dari:
+ReAct = **Reason + Act**. Tiap giliran, model membalas **satu objek JSON**, salah satu dari:
 
 ```json
 { "thought": "alasan singkat", "action": "nama_tool", "args": { } }
@@ -34,7 +34,7 @@ for _ in range(max_tool_calls):
 
 ## Jebakan
 - **Code fence.** Model sering bungkus JSON dengan ```` ```json ````; strip dulu.
-- **Non-JSON.** Jangan crash — balas "format salah, ulangi" lalu lanjut.
+- **Non-JSON.** Jangan crash: balas "format salah, ulangi" lalu lanjut.
 - **Transcript membengkak.** Hitung perkiraan token; stop kalau lewat budget.
 
 ## Lanjut

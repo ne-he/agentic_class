@@ -1,4 +1,4 @@
-"""Numerical cross-check (Lesson 04) — bandingkan dua metode dalam toleransi.
+"""Numerical cross-check (Lesson 04): bandingkan dua metode dalam toleransi.
 
 Method A = "hasil agen", Method B = "recompute independen". Tanpa dependency.
 
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     print("meleset  :", bad)
     assert not bad["passed"] and bad["agreement"] < 1.0
 
-    print("OK — cross-check menangkap selisih.")
+    print("OK: cross-check menangkap selisih.")

@@ -27,7 +27,7 @@ container.wait(timeout=30)           # anti-hang
 
 ## Aturan keras
 1. **HANYA** kode LLM yang lewat sandbox. `exec`/`eval` di backend = haram.
-2. Verifikasi (SQL deterministik via DuckDB) boleh in-process — itu *bukan* kode LLM.
+2. Verifikasi (SQL deterministik via DuckDB) boleh in-process, itu *bukan* kode LLM.
 3. Selalu auto-cleanup; pindahkan artefak (PNG chart) keluar sebelum container dihapus.
 
 ## Jebakan

@@ -5,7 +5,7 @@ Project yang nganggur di 90% = nilai 0. Lesson terakhir bukan teknis: **cara men
 Ship dulu sebagai portfolio (jalan penuh lokal + README + demo), deploy belakangan.
 
 ## Kenapa ini lesson paling penting buatku
-Pola lamaku: over-explore, under-ship — numpuk eksperimen, gak ada yang publik. Aturan baru:
+Pola lamaku: over-explore, under-ship: numpuk eksperimen, gak ada yang publik. Aturan baru:
 tiap milestone harus *menghasilkan sesuatu yang bisa ditunjukkan*, bukan cuma "lebih rapi".
 
 ## Checklist ship (Tier A dulu)
